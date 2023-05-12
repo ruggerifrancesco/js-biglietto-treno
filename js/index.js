@@ -11,5 +11,11 @@ const userAge = parseInt
 let priceTicket = 0.21;
 
 // Discount Cycle for Minors
+if (userAge < 18) {
 
-// Discount Cycle for Over 65 Age
+}
+
+// Discount Cycle for Over 65 
+if (userAge >= 65){
+
+}
