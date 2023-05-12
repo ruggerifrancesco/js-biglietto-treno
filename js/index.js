@@ -9,14 +9,16 @@ const userAge = parseInt
 
 // Casting Variables
 let priceTicket= userDistance * 0.21;
+let discountTicket;
 
-let priceTicketResult;
 
-
-// Discount Cycle for Minors
+// Discount Statement for Minors
 if (userAge < 18) {
-}
 
-// Discount Cycle for Over 65 
-if (userAge >= 65){
+} 
+// Discount Statement for Over 65 
+else if (userAge >= 65) {
+    
+} else {
+    
 }
