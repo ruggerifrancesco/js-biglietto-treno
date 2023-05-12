@@ -13,16 +13,15 @@ let discountTicket;
 
 // Discount Statement for Minors
 if (userAge < 18) {
-    discountTicket = Math.round(priceTicket * (20 / 100));
+    discountTicket = priceTicket * (20 / 100);
 } 
 // Discount Statement for Over 65 
 else if (userAge >= 65) {
-    discountTicket = Math.round(priceTicket * (40 / 100));
+    discountTicket = priceTicket * (40 / 100);
 } else {
     discountTicket = 0;
 }
 
-const finalPrice = priceTicket - discountTicket
+let finalPrice = priceTicket - discountTicket;
 
-alert("Il costo per " + userDistance + "chilometri e di " + finalPrice + " euro.")
-console.log(finalPrice);
+console.log(finalPrice.toFixed(2));
