@@ -11,14 +11,17 @@ const userAge = parseInt
 let priceTicket= userDistance * 0.21;
 let discountTicket;
 
-
 // Discount Statement for Minors
 if (userAge < 18) {
-
+    discountTicket = priceTicket * (20 / 100);
 } 
 // Discount Statement for Over 65 
 else if (userAge >= 65) {
-    
+    discountTicket = priceTicket * (40 / 100);
 } else {
-    
+    discountTicket = 0;
 }
+
+const finalPrice = priceTicket - discountTicket
+
+console.log(finalPrice);
