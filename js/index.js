@@ -14,7 +14,7 @@ let discountTicket;
 // Discount Statement for Minors
 if (userAge < 18) {
     discountTicket = priceTicket * (20 / 100);
-} 
+}
 // Discount Statement for Over 65 
 else if (userAge >= 65) {
     discountTicket = priceTicket * (40 / 100);
@@ -24,4 +24,4 @@ else if (userAge >= 65) {
 
 let finalPrice = priceTicket - discountTicket;
 
-console.log(finalPrice.toFixed(2));
+document.getElementById("ticket-cost-result").innerHTML += finalPrice.toFixed(2)
