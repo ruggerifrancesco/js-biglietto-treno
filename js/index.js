@@ -28,4 +28,4 @@ else if (userAge >= 65) {
 
 let finalPrice = priceTicket - discountTicket;
 
-document.getElementById("ticket-cost-result").innerHTML += finalPrice.toFixed(2)
+document.getElementById("ticket-cost-result").innerHTML += finalPrice.toFixed(2) + "€";
