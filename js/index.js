@@ -12,7 +12,11 @@ let priceTicket= userDistance * 0.21;
 let discountTicket;
 
 // Discount Statement for Minors
-if (userAge < 18) {
+if ( isNaN(userAge) || isNaN(userDistance) ) {
+    priceTicket = "Devi inserire dati corretti per il calcolo!";
+}
+// Discount Statement for Under 18
+else if (userAge < 18) {
     discountTicket = priceTicket * (20 / 100);
 }
 // Discount Statement for Over 65 
