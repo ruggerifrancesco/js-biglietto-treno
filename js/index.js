@@ -12,12 +12,9 @@ let priceTicket= userDistance * 0.21;
 let discountTicket;
 let priceMessage;
 
-// Discount Statement for Minors
-if ( isNaN(userAge) || isNaN(userDistance) ) {
-    priceTicket = "Devi inserire dati corretti per il calcolo!";
-}
+
 // Discount Statement for Under 18
-else if (userAge < 18) {
+if (userAge < 18) {
     priceMessage = " > Hai avuto il 20% disconto sul prezzo originale per essere un minore di 18 anni."
     discountTicket = priceTicket * (20 / 100);
 }
@@ -30,5 +27,9 @@ else if (userAge >= 65) {
 }
 
 let finalPrice = priceTicket - discountTicket;
+
+if ( isNaN(userAge) || isNaN(userDistance) ) {
+    priceTicket = "Devi inserire dati corretti per il calcolo!";
+}
 
 document.getElementById("ticket-cost-result").innerHTML += finalPrice.toFixed(2) + "€" + priceMessage;
