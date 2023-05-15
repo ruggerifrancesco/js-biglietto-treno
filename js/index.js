@@ -18,12 +18,12 @@ if ( isNaN(userAge) || isNaN(userDistance) ) {
 }
 // Discount Statement for Under 18
 else if (userAge < 18) {
-    priceMessage = " > Hai avuto il 20% disconto sul prezzo orginale per essere un minore di 18 anni."
+    priceMessage = " > Hai avuto il 20% disconto sul prezzo originale per essere un minore di 18 anni."
     discountTicket = priceTicket * (20 / 100);
 }
 // Discount Statement for Over 65 
 else if (userAge >= 65) {
-    priceMessage = " > Hai avuto il 40% disconto sul prezzo orginale per essere superiore ai 65 anni."
+    priceMessage = " > Hai avuto il 40% disconto sul prezzo originale per essere superiore ai 65 anni."
     discountTicket = priceTicket * (40 / 100);
 } else {
     discountTicket = 0;
