@@ -28,8 +28,8 @@ else if (userAge >= 65) {
 
 let finalPrice = priceTicket - discountTicket;
 
-if ( isNaN(userAge) || isNaN(userDistance) ) {
-    priceTicket = "Devi inserire dati corretti per il calcolo!";
-}
+// if ( !isNaN(userAge) || !isNaN(userDistance) ) {
+//     finalPrice = "Devi inserire dati corretti per il calcolo!";
+// }
 
 document.getElementById("ticket-cost-result").innerHTML += finalPrice.toFixed(2) + "€" + priceMessage;
